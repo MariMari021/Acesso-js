@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'sand';
+    src: url(static/Quicksand-Regular.ttf);
+}
+
+
+header img{
+    display: flex;
+}
+
+.logo{
+    width:170px
+}
+
+header{
+    display: flex;
+}
+
+.header{
+    display: flex;
+    font-family: 'sand';
+    align-items: center;
+}
+
+
+.redes img{
+    margin: 6px;
+    width: 36px;
+}
+
+.redes{
+    margin-left: 1183px;
+    display: flex;
+}
+
+.tudo{
+    display: flex;
+}
+
+.montanha{
+    height: 582px;
+    width: 826px;
+}
+
+h2{
+    padding-left: 30%;
+}
+
+button{
+    height: 46px;
+    width: 100px;
+    border-radius: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    box-shadow: 5px 7px black;
+    font-family: 'sand';
+    font-size: 20px;
+}
+
+.box{
+    font-family: 'sand';
+        display: inline-grid;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        width: 756px;
+        height: 581px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+}
+
+input{
+    height: 42px;
+    width: 370px;
+    border-radius: 20px;
+}
+
+.meio{
+    margin: 20px;
+}

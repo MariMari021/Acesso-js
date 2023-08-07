@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+        <img class="logo" src="img/image-PhotoRoom.png-PhotoRoom.png" alt="">
+        <div class="redes">
+        <img src="img/instagram.png" alt="">
+        <img src="img/facebook.png" alt="">
+        <img src="img/whatsapp.png" alt="">
+    </div>
+        </div>
+    </header>
+    <main>
+        <div class="tudo">
+        <div id="verde" class="box">
+            <div class="meio">
+        <h1>Área exclusiva para o acesso</h1>
+        <p>Insira seu cartão de identificação</p>
+        <input type="number" id="cardNumber" placeholder="Digite o número do cartão">
+        <button onclick="checkAccess()">Acessar</button>
+        <p id="accessMessage"></p>
+    </div>
+    </div>
+<img class="montanha" src="img/montanha.png" alt="">
+</div>
+    </main>
+    <script>
+        function checkAccess() {
+          const cardNumber = parseInt(document.getElementById("cardNumber").value);
+          const accessMessage = document.getElementById("accessMessage");
+    
+          if (cardNumber >= 1000 && cardNumber <= 1999) {
+            accessMessage.textContent = "Acesso total permitido!";
+    
+            let x = document.getElementById('verde');
+            x.style.backgroundColor = '#8897AA';
+          }
+    
+          if (cardNumber >= 2000 && cardNumber <= 2999) {
+            accessMessage.textContent = "Acesso limitado permitido.";
+            let x = document.getElementById('verde');
+            x.style.backgroundColor = '#486F99';
+          }
+    
+          if (cardNumber >= 3000) {
+            accessMessage.textContent = "Acesso negado.";
+            let x = document.getElementById('verde');
+            x.style.backgroundColor = '#02152B';
+          }
+    
+          if (cardNumber < 1000 || cardNumber === NaN) {
+            accessMessage.textContent = "Número de cartão inválido.";
+          }
+        }
+      </script>
+
+</body>
+</html>
